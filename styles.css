@@ -1,8 +1,112 @@
 
 *{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    padding: 3px;
+}
+.gross{
+    animation: insanity 5s 1 ;
+}
+section{
+    border: 5px double black;
+    border-radius: 20px;
+}
+button{
+    background-color: white;
+}
+button:hover{
+    animation: hovering 1s forwards;
+}
+@keyframes hovering{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: gray;
+    }
 }
 .pg{
     /* background-color: blue; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(red, green, blue);
+
+}
+.style1{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "rgb layout" "font hiding" ;
+
+}
+.style2{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "font hiding" "rgb layout";
+}
+.pg{
+    grid-area: font;
+}
+.hide{
+    grid-area: hiding;
+    border: 5px double black;
+
+}
+.secret{
+    visibility: hidden;
+}
+.colors{
+    grid-area: rgb;
+    border: 5px double black;
+
+}
+.layout{
+    grid-area: layout;
+    border: 5px double black;
+
+}
+.darkmode{
+    background-color: black;
+    color:white;
+    border-color: white;
+}
+@keyframes insanity{
+    0%{
+        transform: scale(1,1);
+        background-color: white;
+    }
+    12.5%{
+        background-color: red;
+
+    }
+    25%{
+        transform: scale(0.5,2);
+        background-color: orange;
+
+    }
+    37.5%{
+        background-color: yellow;
+
+    }
+    50%{
+        transform: (1,1);
+        background-color: green;
+
+    }
+    62.5%{
+        background-color: indigo;
+
+    }
+    75%{
+        transform: scale(2,0.5);
+        background-color: blue;
+
+    }
+    87.5%{
+        background-color: violet;
+
+    }
+    100%{
+        transform: scale(1,1);
+        background-color: white;
+    }
 }

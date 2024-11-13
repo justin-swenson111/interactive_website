@@ -6,40 +6,44 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
+<body id="total">
     <h1>Adaptive Wbsite</h1>
-    <main>
+    <main class="style1 style2" id="body">
         <section class="pg" id="pg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse architecto, consequatur accusantium sunt sequi odio accusamus perferendis deleniti neque mollitia dignissimos alias et, quidem quibusdam! Culpa reiciendis blanditiis nesciunt veniam cupiditate placeat officia ab ea doloribus qui, ex voluptatibus laudantium ipsa dolor amet facere molestias quibusdam adipisci fugit. Fugit?</p>
             <button id="fontbtn">Change font</button>
             <button id="color">Change color</button>
             <button id="size">Change font size</button>
         </section>
-        <section class="hide">
-            <p id="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam molestias earum enim necessitatibus laudantium vero, possimus quo ab at unde, illo ea debitis a similique quibusdam perspiciatis est non consequatur ratione? Odio eum, eaque vitae in mollitia sapiente similique iure amet officia aspernatur expedita sint dolorem cumque est dolore!</p>
-            <button id="hide">hide text</button>
+        <section class="hide" id="hideSection">
+            <p id="hideTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam molestias earum enim necessitatibus laudantium vero, possimus quo ab at unde, illo ea debitis a similique quibusdam perspiciatis est non consequatur ratione? Odio eum, eaque vitae in mollitia sapiente similique iure amet officia aspernatur expedita sint dolorem cumque est dolore!</p>
+            <button id="hideBtn">hide text</button>
+            <p class="secret" id="secret">hi this was hidden.</p>
         </section>
-        <section class="colors">
+        <section class="colors" id="colors">
             <h3>RGB slider</h3>
 
-            <label for="red">red</label>
             <input type="range" name="" id="red" min="0" max="255">
+            <label for="red" id="redLabel">red</label>
 
             <br>    
 
-            <label for="green">green</label>
             <input type="range" name="" id="green" min="0" max="255">
+            <label for="green" id="greenLabel">green</label>
 
             <br>
 
-            <label for="blue">blue</label>
             <input type="range" name="" id="blue" min="0" max="255">
+            <label for="blue" id="blueLabel">blue</label>
+        </section>
+        <section class="layout" id="layoutTxt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita asperiores quisquam explicabo voluptatibus eveniet, error est in accusamus nulla iure.</p>
+            <button id="layout">Change layout</button>
+            <button id="darkmode">darkmode</button>
         </section>
     </main>
-
-    <section class="layout">
-        <button id="layout">Change layout</button>
-    </section>
+    <button id="Reset">Reset</button>
+    <button id="random">random</button>
 </body>
 <script src="./script.js"></script>
 </html>
